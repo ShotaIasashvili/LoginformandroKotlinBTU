@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginform">
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#444444"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Profile Info"
+            android:textColor="#6dffbf"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="#6bfff7"
+            android:textColorHint="#52afaa" />
+
+        <EditText
+            android:id="@+id/et_firstName"
+            android:hint="First Name"
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/et_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="#6bfff7"
+            android:textColorHint="#52afaa" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age in numbers"
+            android:minHeight="48dp"
+            android:numeric="signed|integer"
+            android:digits="0123456789."
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#6bfff7"
+            android:textColorHint="#52afaa" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="#6bfff7"
+            android:textColorHint="#52afaa" />
+
+        <EditText
+            android:id="@+id/edl_editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="#6bfff7"
+            android:textColorHint="#52afaa" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="25dp"
+            android:rotationX="4">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotationX="4"
+                android:text="Clear"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotationX="4"
+                android:text="Save"
+                android:enabled="true"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
